@@ -1,4 +1,4 @@
-body{
+body {
     margin: 10px;
     padding-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,8 +6,8 @@ body{
 }
 
 /*Navigation declaration*/
-span>img{
-    width:3em;
+span>img {
+    width: 3em;
     cursor: pointer;
 }
 
@@ -17,31 +17,33 @@ span>img{
     width: 30vw;
 } */
 
-nav ul li {
+/* nav ul li {
     list-style-type: none;
 }
 
-nav ul li p{
+nav ul li p {
     font-size: 1em;
-    cursor: pointer;    
-}
+    cursor: pointer;
+} */
 
-header{
-    margin:  0 0 2rem 0;
+header {
+    margin: 0 0 2rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.user-slug{
+.user-slug {
     height: 30px;
     width: 30px;
     border-radius: 50px;
     transform: translateX(-20px);
     cursor: pointer;
+    box-shadow: 0px 0px 15px rgb(136, 117, 117);
 }
 
-button{
+
+button {
     font-size: larger;
     border-radius: 10px;
     border: none;
@@ -51,10 +53,24 @@ button{
     outline: 1px solid white;
     outline-offset: 0.2rem;
     cursor: pointer;
+    transform: translateX(20em);
 }
 
-header a{
+
+header a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
+}
+
+.scale {
+    transition: ease-out 0.25s;
+}
+
+.scale:hover {
+    scale: 1.1;
+}
+
+button:hover>a {
+    color: black;
 }
